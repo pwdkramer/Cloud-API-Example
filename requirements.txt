@@ -1,0 +1,9 @@
+Flask==2.3.2
+google-cloud-datastore==2.15.0
+python-jose
+flask-cors
+six
+python-dotenv
+requests
+authlib
+protobuf==3.20.*
