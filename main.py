@@ -1,6 +1,7 @@
 from google.cloud import datastore
 from flask import Flask, request, jsonify
 import requests
+import constants
 
 from functools import wraps
 import json
@@ -34,9 +35,9 @@ BACKLOGS = "backlogs"
 GAMES = "games"
 
 # Update the values of the following 3 variables - reused from assignment 7
-CLIENT_ID = 'ZAzKqxGD1zH6praV6ARWJPbtx4jLKBio'
-CLIENT_SECRET = 'hhK_pGLSi_SZUvq6VXyViO2TbG1TM_WK2_BEMGJKFse73duf8xeggUP8z_lGJPyO'
-DOMAIN = 'dev-zjfeq3kvalipmjgg.us.auth0.com'
+CLIENT_ID = constants.CLIENT_ID
+CLIENT_SECRET = constants.CLIENT_SECRET
+DOMAIN = constants.DOMAIN
 # For example
 # DOMAIN = 'fall21.us.auth0.com'
 
